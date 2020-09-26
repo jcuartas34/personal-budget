@@ -7,6 +7,22 @@ body {
     font-family: Tahoma, Arial;
 }
 
+/*This is an A11y Change*/
+
+.skip-to-content-link {
+  background: #b4c6f0;
+  color: #fff;
+  font-weight: 700;
+  left: 50%;
+  padding: 4px;
+  position: absolute;
+  transform: translateY(-100%);
+}
+
+.skip-to-content-link:focus{
+    transform: translateY(0%);
+}
+
 div.menu {
     width: 100%;
     background-color: #4d5791;
@@ -40,7 +56,7 @@ div.menu ul li a:hover  {
 div.hero {
     height: 350px;
     background-color: #b4c6f0;
-    background-image: url('/bg.png');
+    background-image: url('bg.png');
     background-size: 400px;
     background-repeat: no-repeat;
     background-position: center bottom;
